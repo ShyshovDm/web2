@@ -1,0 +1,39 @@
+<!-- Модальне вікно -->
+<div class="modal fade" id="modal_executors" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Заголовок модального вікна -->
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="executor_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Тіло модального вікна -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Прізвище, ім’я, по батькові -->
+          <span class="fs-5">Прізвище, ім’я, по батькові</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="executor_name" type="text"
+            placeholder="П.І.Б.">
+
+          <!-- Email виконавця -->
+          <span class="fs-5">Email виконавця</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary" id="executor_email" type="text"
+            placeholder="Email">
+        </form>
+      </div>
+
+      <!-- Кнопки модального вікна -->
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" data-bs-dismiss="modal" onclick="modal_add_executors()"
+          id="executor_yes">#Yes</button>
+        <button class="btn btn-outline-secondary" data-bs-dismiss="modal" id="executor_no">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<!-- Модальне вікно -->
+<div class="modal fade" id="modal_clients" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Заголовок модального вікна -->
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="client_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Тіло модального вікна -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Прізвище, ім’я, по батькові -->
+          <span class="fs-5">Прізвище, ім’я, по батькові</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="client_name" type="text"
+            placeholder="П.І.Б.">
+
+        </form>
+      </div>
+
+      <!-- Кнопки модального вікна -->
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" id="client_yes" data-bs-dismiss="modal"
+          onclick="modal_add_clients()">#Yes</button>
+        <button class="btn btn-outline-secondary" id="client_no" data-bs-dismiss="modal">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>
